@@ -1,0 +1,44 @@
+
+body {
+    margin: 0
+}
+div {
+    text-align: justify;
+}
+
+.agrupar-colunas {
+    display: flex;
+    gap: 20px
+}
+
+.coluna {
+    width: 50%;
+}
+
+.principal {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.linha {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4d7a51;
+}
+
+.footer {
+    background-color: #4d7a51;
+    border: 1px solid rgb(70, 70, 70);
+    border-width: 1px 0px 1px 0px ;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo-partiuEnem{
+width: 150px;
+filter: invert(100%);
+}
