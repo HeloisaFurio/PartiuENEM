@@ -16,8 +16,8 @@ div {
 }
 
 .principal {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 .linha {
     border-width: 5px;
@@ -29,8 +29,8 @@ div {
     background-color: #4d7a51;
     border: 1px solid rgb(70, 70, 70);
     border-width: 1px 0px 1px 0px ;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 25%;
+    padding-right: 25%;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -41,4 +41,93 @@ div {
 .logo-partiuEnem{
 width: 150px;
 filter: invert(100%);
+}
+
+.header {
+    /* Remove margens e facilita calcular os tamanhos */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Barra superior */
+.topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 40px;
+
+    background:#f5f5f5;
+    border-bottom:1px solid #d9d9d9;
+}
+
+/* Logo */
+.topo h1{
+    font-size:32px;
+    color:#2f5d35;
+    font-weight:bold;
+}
+
+/* Entrar + Criar Conta */
+.usuario{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.usuario a{
+    text-decoration:none;
+    color:black;
+    font-size:14px;
+}
+
+/* Botão Criar Conta */
+.btn-conta{
+    border:1px solid #777;
+    padding:6px 12px;
+}
+
+/* Menu principal */
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+
+    padding:14px 0;
+
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#444;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    text-decoration:none;
+    color:#444;
+    font-size:13px;
+    font-weight:bold;
+    border-bottom:2px solid transparent; /* reserva o espaço */
+    padding-bottom:3px;
+}
+
+.menu a:hover{
+    color:#2f5d35;
+    border-bottom-color:#8b3a3a; /* só muda a cor */
+}
+}
+
+/* Barra verde da página atual */
+.pagina-atual{
+    background:#dfe8d6;
+    padding:12px 40px;
+    color:#3f5f3f;
+    font-weight:bold;
+    border-bottom:1px solid #c8d3be;
 }
