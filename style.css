@@ -90,17 +90,22 @@ filter: invert(100%);
     display:flex;
     align-items:center;
     gap:18px;
+    
 }
 
-.usuario a{
+.entrar a{
     text-decoration:none;
     color:black;
     font-size:14px;
 }
 
+.criar-conta a{
+    color:#4c913e
+}
+
 /* Botão Criar Conta */
 .btn-conta{
-    border:1px solid #777;
+    border:1px solid #4c913e;
     padding:6px 12px;
 }
 
@@ -121,7 +126,7 @@ filter: invert(100%);
     color:#444;
     font-size:13px;
     font-weight:bold;
-     border-bottom:2px solid transparent; /* reserva o espaço */
+    border-bottom:2px solid transparent; /* reserva o espaço */
     padding-bottom:3px;
     transition: all ease 0.5s;
 }
@@ -146,13 +151,28 @@ filter: invert(100%);
 
 }
 
-.setinha{
+.setinha::before {
+    content: "ᐊ";
+    color: #3f5f3f;
+    display: inline-block;
+    border-bottom:2px solid transparent; /* reserva o espaço */
+    padding-bottom:3px;
+    transition: all ease 0.5s;
+    /* border-left: 10px solid #dfe8d6; */
+}
+
+.pagina-atual a:hover .setinha::before {
+    content: "▲";
+    transform: rotate(-90deg);
+}
+
+/* .setinha a:hover{
     text-decoration:none;
     border: 0;
     color:#3f5f3f;
     display: inline-block;
     rotate: -90deg
-}
+} */
 
 .link-sobre {
     color: #3f5f3f; /* cor normal */
@@ -161,5 +181,5 @@ filter: invert(100%);
 }
 
 .link-sobre:hover {
-    color: rgb(12, 53, 30); /* cor quando passa o mouse */
+    color: #0c351e; /* cor quando passa o mouse */
 }
