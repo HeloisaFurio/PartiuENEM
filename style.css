@@ -1,6 +1,7 @@
 
 body {
     margin: 0
+    
 }
 div {
     text-align: justify;
@@ -17,6 +18,11 @@ div {
 
 .coluna {
     width: 50%;
+}
+
+.enem-inicio {
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .principal {
@@ -73,11 +79,11 @@ filter: invert(100%);
    border-bottom: 0px;
 }
 
-.topo h1{
+/* .topo h1{
     font-size:32px;
     color:#2f5d35;
     font-weight:bold;
-}
+} */
 
 /* Entrar + Criar Conta */
 .usuario{
@@ -146,4 +152,14 @@ filter: invert(100%);
     color:#3f5f3f;
     display: inline-block;
     rotate: -90deg
+}
+
+.link-sobre {
+    color: #3f5f3f; /* cor normal */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link-sobre:hover {
+    color: rgb(12, 53, 30); /* cor quando passa o mouse */
 }
